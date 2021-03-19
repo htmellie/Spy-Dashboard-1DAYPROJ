@@ -28,7 +28,7 @@ function MissionsPage() {
         />
         <div>
           {missions.map((mission) => {
-            return <Mission mission={mission} />;
+            return <Mission mission={mission} key={mission.id} />;
           })}
         </div>
       </div>
